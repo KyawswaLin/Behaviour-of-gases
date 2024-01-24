@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Laws of gaseous</title>
+	<link rel="stylesheet" href="law.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<style>
+</style>
+<body>
+	<div class="sidebar">
+        <ul>
+            <li class="logo">
+                
+                <a href="General.html">
+                    <span class="icon"><ion-icon name="newspaper-outline"></ion-icon><span class="tooltip">General</span></span>
+                    <span class="text">General</span>
+                </a>
+                
+            </li>
+            <li>
+                
+                <a href="Law.html">
+                    <span class="icon"><ion-icon name="git-pull-request-outline"></ion-icon><span class="tooltip">Laws of Gases</span></span>
+                    <span class="text">Laws of Gases</span>
+                </a>
+                
+            </li>
+            <li>
+                
+                <a href="Def.html">
+                    <span class="icon"><ion-icon name="reader-outline"></ion-icon><span class="tooltip">Definitions</span></span>
+                    <span class="text">Definitions</span>
+                </a>
+                
+            </li>
+            
+            <li>
+                <div>
+                <a href="exerc.html">
+                    <span class="icon"><ion-icon name="barbell-outline"></ion-icon><span class="tooltip">Exercises</span></span>
+                    <span class="text">Exercises</span>
+                </a>
+                </div>
+            </li>
+            <li>
+                
+                <a href="https://youtube.com/playlist?list=PL1bm6xGezySH9n5Vx6RNdLNNO6i-2cgs-&si=AF4ceZ1k_ZPHV-FW">
+                    <span class="icon"><ion-icon name="film-outline"></ion-icon><span class="tooltip">Videos</span></span>
+                    <span class="text">Videos</span>
+                </a>
+                
+            </li>
+        <div class="bottom">
+            <li>
+               
+                <a href="index.html">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon><span class="tooltip">Home</span></span>
+                    <span class="text">Home</span>
+                </a>
+               
+                
+            </li>
+        </div>
+        </ul>
+    </div>
+
+    <div class="container">
+        <!--Boyle's law-->
+            <div class="headoflaw" id="boyles"><h1>"Boyle's Law"</h1></div><br>
+        <!--About law maker-->
+            <div class="maker">
+                <div class="portrait">
+                    <img src="imgs/boyle.jpg">
+                </div>
+                <div class="biography">
+                    <p>အမည်အရင်းမှာ ရောဘတ်ဘွိုင်းလ် (Robert Boyle)ဖြစ်သည်။ ဖခင် ပထမဗြိတိသျှမှူးမတ်ကြီးကော့ခ်(The 1<sup>st</sup> Earl of cork)&nbsp;နှင့် မိခင်&nbsp;ကတ်သရင်းဖန်တွန်(Catherine Fenton) တို့၏&nbsp;ခုနှစ်ယောက်မြောက်သားဖြစ်ပြီး ၁၆၂၇ ခုနှစ်၊ဇန်နဝါရီလ၊၂၅ ရက်နေ့တွင် အိုင်ယာလန်နိုင်ငံ ဝေါတာဖို့ဒ်ကောင်တီ၊လစ်ဇ်မောရဲတိုက်တွင် မွေးဖွားခဲ့သည်။ အက်တန်ကောလိပ် မှဘွဲ့ရရှိပြီးရူပဗေဒနှင့်ဓာတုဗေဒဘာသာရပ်များကို အထူးလေ့လာလိုက်စားခဲ့သည်။သဘာဝဒဿနဆရာ၊ ဓာတုဗေဒပညာရှင်၊ ရူပဗေဒပညာရှင်၊ တီထွင်သူတစ်ဦးဖြစ်၍ ပထမဆုံးသော ခေတ်သစ်ဓာတုဗေဒပညာရှင်ဟု အများအားဖြင့် ယူဆခံရသောသူလည်းဖြစ်သည်။ ထို့ကြောင့်ပင် ၎င်းသည် ခေတ်သစ်ဓာတုဗေဒပညာရပ်ကို တည်ထောင်သူများစွာထဲက တစ်ဦး၊ လက်တွေ့စမ်းသပ်နိုင်သည့် ခေတ်သစ် သိပ္ပံနည်းကျ နည်းလမ်းဖော်ထုတ်သူ ရှေ့ဆောင်လမ်းပြများစွာမှ တစ်ဦးဟူ၍သတ်မှတ်ကြသည်။ဘွိုင်းသည် ၁၆၉၁ခုနှစ်၊ ဒီဇင်ဘာလ၊ ၃၁ရက်နေ့တွက်ကွယ်လွန်ခဲ့သည်။</p>
+
+                </div>
+            </div>
+
+            <!--Description About law using radio button-->
+            <div class="law">
+                <input type="checkbox" name="accordion" id="accordion">
+                <label for="accordion">"Boyle's Law"</label>
+                <div class="accordion-content">
+                    "When the temperature of a given mass of gas is kept constant, the volume of the gas is inversely proportional to its pressure"<br>
+                    <div><button onclick="showMyan()">Myan</button>
+                    <button onclick="listen()"><i class="fa-solid fa-volume-high"></i><audio src="audios/Boyle.mp3" id="audio"></audio></button></div>
+                </div>
+
+                <div id="accordion-content-mya">
+                    <q>ပေးထားသော&nbsp;&nbsp;ဒြပ်ထုရှိသော&nbsp;ဓာတ်ငွေ့တစ်ခု၏အပူချိန်ကို&nbsp;ကိန်းသေထားသော်&nbsp;&nbsp;ဓာတ်ငွေ့၏ထုထည်သည် ၎င်း၏ဖိအားနှင့်ပြောင်းပြန်အချိုးကျသည်။</q>
+                </div>
+            </div>
+
+            <!--box for equation and graph-->
+            <div class="makerLaw">
+                <div class="contentbox">
+                    <p>V&ensp;&ensp;&prop;&ensp;&ensp;<sup style="font-size: 15px;">1</sup>/<sub style="font-size: 15px;">P</sub>&ensp;&ensp;(a given mass of gas, kept at a constant temperature)</p>
+                    <p>V&ensp;&ensp;=&ensp;&ensp;constant&ensp;&ensp;&times;&ensp;&ensp;<sup style="font-size: 15px;">1</sup>/<sub style="font-size: 15px;">P</sub> </p>
+                    <p>PV&ensp;&ensp;=&ensp;&ensp;constant</p><br>
+                    <button style="background-color: orange; color: #000;"><h3>P<sub>1</sub>V<sub>1</sub>&ensp;&ensp;=&ensp;&ensp;P<sub>2</sub>V<sub>2</sub></h3></button>
+                    <p>Where P<sub>1</sub> and V<sub>1</sub> are for the initial conditions;</p>
+                    <p>Where P<sub>2</sub> and V<sub>2</sub> are for the final conditions;</p>
+                    <p>Where P&ensp;=&ensp;pressure,&ensp;&ensp;V&ensp;=&ensp;volume</p>
+                </div>
+                <div class="imgbox">
+                    <img src="imgs/VandP.png">
+                    <p>Relationship between volume and pressure of gas</p>
+                </div>
+            </div><br>
+            <iframe src="pdf/example/Eg(1).pdf" frameborder="0" width="100%" height="400px"></iframe>
+            <hr style="height:5px;" color="black"/><br>
+
+<!--Charles' law-->
+            <div class="headoflaw" id="charle"><h1>"Charles' Law"</h1></div><br>
+            <!--About law maker-->
+            <div class="maker">
+                <div class="portrait">
+                    <img src="imgs/charles.jpg">
+                </div>
+                <div class="biography">
+                    <p>အမည်အရင်းမှာဂျက််စချား(Jacques charle)ဖြစ်သည်။၎င်းကို ၁၇၄၆ခုနှစ်၊နိုဝင်ဘာလ၊ ၁၂ရက်နေ့တွင် ပြင်သစ်နိုင်ငံ Beaugency Orleanais အရပ်၌မွေးဖွားခဲ့သည်။တီထွင်သူ၊သိပ္ပံပညာရှင်၊သင်္ချာပညာရှင်၊မိုးပျံပူဖောင်းစီးသူတစ်ဦးဖြစ်သည်။ချာစ်းသည် သင်္ချာနှင့်ပတ်သတ်၍ရေးသားမှုရှားသည်။ ချားစ်နှင့် ရောဘတ်ညီအကိုတို့သည် ကမ္ဘာ့ပထမဆုံးဟိုက်ဒြိုဂျင်ဖြည့်ဓာတ်ငွေ့ပူဖောင်းကို ၁၇၈၃ ခုနှစ်တွင် လွှတ်တင်ခဲ့၍ ၁၇၈၃ဒီဇင်ဘာလ၌ ချားစ်နှင့် ပူးတွဲမောင်းသူနီကိုလပ်စ်လူဝီရောဘတ်တို့သည် လူထိန်းမိုးပျံပူဖောင်းဖြင့်အမြင့်ပေ(၁၈၀၀)(သို့)၅၀၀ မီတာရှိမြေပြင်ပေါ်သို့ဆင်းသက်ခဲ့ကြသည်။ဤသို့စွန့်ဦးတီထွင်ဟိုက်ဒြိုဂျင်ဖြင့်အမြင့်သို့ပျံသန်းခဲ့ခြင်းကြောင့် ဤသို့သောမိုးပျံပူဖောင်းသည်(Charliere`)ဟုအမည်တွင်ခဲ့သည်။၁၇၉၅တွင် ပြင်သစ်သိပ္ပံအကယ်ဒမီတွင် ရူပဗေဒပါမောက္ခတစ်ဦးဖြစ်လာခဲ့သည်။၁၈၂၃ ခုနှစ်ဧပြီလ၇ရက်၊အသက်(၇၆)နှစ်တွင် ပြင်သစ်နိုင်ငံပဲရစ်မြို့၌ကွယ်လွန်ခဲ့သည်။</p>
+
+                </div>
+            </div>
+
+            <!--Description About law using radio button-->
+            <div class="law">
+                <input type="checkbox" name="accordion" id="accordion1">
+                <label for="accordion1">"Charles' Law"</label>
+                <div class="accordion-content">
+                    "When the pressure of a given mass of gas is kept constant, the volume of the gas is directly proportional to its temperature on the Kelvin scale."<br>
+                    <div><button onclick="showMyan1()">Myan</button>
+                    <button onclick="listen1()"><i class="fa-solid fa-volume-high"></i><audio src="audios/charles.law.mp3" id="audio1"></audio></button></div>
+                </div>
+
+                <div id="accordion-content-mya1">
+                    <q>
+                        ပေးထားသော ဒြပ်ထုတစ်ခုရှိသော ဓာတ်ငွေ့တစ်ခု၏ ဖိအားကို ကိန်းသေထားသော် ဓာတ်ငွေ့၏ထုထည်သည် ၎င်း၏ကယ်လ်ဗင်စကေးအပူချိန်နှင့် တိုက်ရိုက်အချိုးကျသည်။
+                    </q>
+                </div>
+            </div>
+
+            <!--box for equation and graph-->
+            <div class="makerLaw">
+                <div class="contentbox">
+                    <p>V&ensp;&ensp;&prop;&ensp;&ensp;T&ensp;&ensp;(a given mass of gas, kept at a constant pressure)</p>
+                    <p>V&ensp;&ensp;=&ensp;&ensp;constant&ensp;&ensp;&times;&ensp;&ensp;T</p>
+                    <p><sup style="font-size: 13px;">
+                        <button style="border: none; box-shadow: none;">
+                        <h3>
+                        <div>
+                        <div style="border-bottom: 1px solid black;">V</div>
+                        <div>T</div>
+                        </div>
+                        </h3>
+                        </button>
+                        &ensp;&ensp;=&ensp;&ensp;<span style="font-size: 16px;">constant</span></p><br>
+                    <button style="background-color: orange; color: #000;">
+                        <h3 style="display: flex;">
+                            <div>
+                                <div style="border-bottom: 1px solid black;">V<sub>1</sub></div>
+                                <div>T<sub>1</sub></div>
+                            </div>&ensp;&ensp;
+                            <div style="display: flex; align-items: center; justify-content: center;">=</div>&ensp;&ensp;
+                            <div>
+                                <div style="border-bottom: 1px solid black;">V<sub>2</sub></div>
+                                <div>T<sub>2</sub></div>
+                            </div>
+                        </h3>
+                    </button>
+                    <p>Where V<sub>1</sub> and T<sub>1</sub> are for the initial conditions;</p>
+                    <p>Where V<sub>2</sub> and T<sub>2</sub> are for the final conditions;</p>
+                    <p>Where V&ensp;=&ensp;volume,&ensp;&ensp;T&ensp;=&ensp;temperature</p>
+                </div>
+                <div class="imgbox">
+                    <img src="imgs/tandv.png">
+                    <p>Relationship between volume and temperature of gas</p>
+                </div>
+            </div><br>
+            <iframe src="pdf/example/Eg(2).pdf" frameborder="0" width="100%" height="400px"></iframe>
+            <hr style="height:5px;" color="black"/><br>
+
+<!--Gay-lussac's Law-->
+
+            <div class="headoflaw" id="gaylussac"><h1>"Gay-lussac's Law"</h1></div><br>
+            <!--About law maker-->
+            <div class="maker">
+                <div class="portrait">
+                    <img src="imgs/Gaylussac.jpg">
+                </div>
+                <div class="biography">
+                    <p>အမည်အရင်းမှာ ဂျိုးဇက်လူးဝစ်ဂေးလူးဆက်(Joseph Lowis Gay-lussac)ဖြစ်သည်။၎င်းကို ၁၇၇၈ခုနှစ်၊ဒီဇင်ဘာလ၊(၆)ရက်နေ့တွင် ပြင်သစ်ဘုရင့်နိုင်ငံ Saint-l`eonard-de-Noblatအရပ်၌မွေးဖွားခဲ့ပြီး ဖခင်မှာရှေ့နေဖြစ်သူအန်သနီဂေး(Anthony Gay)ဖြစ်သည်။ ပြင်သစ်ဓာတုဗေဒ၊ ရူပဗေဒပညာရှင်တစ်ဦးဖြစ်သည်။ရေသည် ဟိုက်ဒြိုဂျင်နှစ်ဆ၊ အောက်ဆီဂျင်တစ်ဆဖြင့် ပါဝင်ဖွဲ့စည်းထားခြင်းကို(Alexander Von Humboldt)နှင့်အတူရှာဖွေတွေ့ရှိခြင်း၊ ဓာတ်ငွေ့ဆိုင်ရာနိယာမနှစ်ခုတို့ကြောင့်အထူးကျော်ကြားသည်။ ထို့အပြင်နိုင်ငံအများအပြား၌အသုံးပြုကြသည့်အရက်ယမကာတိုင်းတာမှုစနစ်(degree Gay-lussac)ကိုထွက်ပေါ်စေခဲ့သော အရက်-ရေအရောနှောများနှင့်ပတ်သတ်သောလုပ်ငန်းကြောင့်လည်း၎င်းကိုကောင်းစွာသိရှိကြသည်။၁၈၅၀ခုနှစ်၊မေလ၊(၉)ရက်နေ့တွင်ကွယ်လွန်သည်။</p>
+
+                </div>
+            </div>
+
+            <!--Description About law using radio button-->
+            <div class="law" id="gay1">
+                <input type="checkbox" name="accordion" id="accordion2">
+                <label for="accordion2">"Gay-lussac Law(Temperature-Pressure Relationship)"</label>
+                <div class="accordion-content">
+                    "When a volume of a given mass of gas is kept constant, the pressure of the gas is directly proportional to its temperature on the Kelvin scale."<br>
+                    <div><button onclick="showMyan2()">Myan</button>
+                    <button onclick="listen2()"><i class="fa-solid fa-volume-high"></i><audio src="audios/Gay-Lussac's 1.mp3" id="audio2"></audio></button></div>
+                </div>
+
+                <div id="accordion-content-mya2">
+                    <q>ပေးထားသော ဒြပ်ထုတစ်ခုရှိသော ဓာတ်ငွေ့ထုထည်ကို ကိန်းသေထားသော် ဓာတ်ငွေ့ဖိအားသည် ကယ်လ်ဗင်အပူချိန်တွင်ရှိသော ၎င်း၏အပူချိန်နှင့် တိုက်ရိုက်အချိုးကျသည်။</q>
+                </div>
+            </div>
+
+            <!--box for equation and graph-->
+            <div class="makerLaw">
+                <div class="contentbox">
+                    <p>P&ensp;&ensp;&prop;&ensp;&ensp;T&ensp;&ensp;(a given mass of gas, kept at a constant volume)</p>
+                    <p>P&ensp;&ensp;=&ensp;&ensp;constant&ensp;&ensp;&times;&ensp;&ensp;T</p>
+                    <p><sup style="font-size: 13px;">
+                        <button style="border: none; box-shadow: none;">
+                        <h3>
+                        <div>
+                        <div style="border-bottom: 1px solid black;">P</div>
+                        <div>T</div>
+                        </div>
+                        </h3>
+                        </button>
+                        &ensp;&ensp;=&ensp;&ensp;<span style="font-size: 14px;">constant</span></p><br>
+                    <button style="background-color: orange; color: #000;">
+                        <h3 style="display: flex;">
+                            <div>
+                                <div style="border-bottom: 1px solid black;">P<sub>1</sub></div>
+                                <div>T<sub>1</sub></div>
+                            </div>&ensp;&ensp;
+                            <div style="display: flex; align-items: center; justify-content: center;">=</div>&ensp;&ensp;
+                            <div>
+                                <div style="border-bottom: 1px solid black;">P<sub>2</sub></div>
+                                <div>T<sub>2</sub></div>
+                            </div>
+                        </h3>
+                    </button>
+                    <p>Where P<sub>1</sub> and T<sub>1</sub> are for the initial conditions;</p>
+                    <p>Where P<sub>2</sub> and T<sub>2</sub> are for the final conditions;</p>
+                    <p>Where P&ensp;=&ensp;pressure,&ensp;&ensp;T&ensp;=&ensp;temperature</p>
+                </div>
+                <div class="imgbox">
+                    <img src="imgs/pandt.png">
+                    <p>Relationship between volume and pressure of gas</p>
+                </div>
+            </div><br>
+            <iframe src="pdf/example/Eg(3).pdf" frameborder="0" width="100%" height="400px"></iframe>
+
+            <div class="law" id="gay2">
+                <input type="checkbox" name="accordion" id="accordion3">
+                <label for="accordion3">"Gay-lussac(Volume-Amount Relationship)"</label>
+                <div class="accordion-content">
+                    "At the same temperature and pressure, the volumes of reacting gases and gaseous products are in simple ratios of small whole numbers."<br>
+                    <div><button onclick="showMyan3()">Myan</button>
+                    <button onclick="listen3()"><i class="fa-solid fa-volume-high"></i><audio src="audios/gay2.mp3" id="audio3"></audio></button></div>
+                </div>
+
+                <div id="accordion-content-mya3">
+                    <q>တူညီသော အပူချိန်နှင့် ဖိအားတွင် ဓာတ်ပြုဓာတ်ငွေ့နှင့်ဓာတ်ဖြစ်ဓာတ်ငွေ့တို့၏ ထုထည်တို့သည် ကိန်းပြည့်အချိုးငယ်လေးများဖြစ်သည်။</q>
+                </div>
+            </div>
+            <div class="makerLaw">
+                <div class="contentbox">
+                    <p>For instance, H<sub>2</sub> and N<sub>2</sub> react to form NH<sub>3</sub></p>
+                    <p>hydrogen&ensp;&ensp;+&ensp;&ensp;nitrogen&ensp;&ensp;&rarr;&ensp;&ensp;ammonia</p>
+                    <p>3H<sub>2</sub>(g)&ensp;&ensp;+&ensp;&ensp;N<sub>2</sub>(g)&ensp;&ensp;&rarr;&ensp;&ensp;2NH<sub>3</sub>(g)</p>
+                    <p>3&ensp;mol&ensp;&ensp;&ensp;&ensp;&ensp;1&ensp;mol&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2&ensp;mol</p>
+                    <p>3&ensp;volumes&ensp;&ensp;&ensp;&ensp;&ensp;1&ensp;volume&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2&ensp;volumes</p>
+                    <p>The volume ratios of H<sub>2</sub>:&ensp;N<sub>2</sub>:&ensp;NH<sub>3</sub>=3:1:2&ensp;(simple ratios of small whole numbers)</p>
+                </div>
+            </div>
+            <iframe src="pdf/example/Eg(5).pdf" frameborder="0" width="100%" height="400px"></iframe>
+            <hr style="height:5px;" color="black"/><br>
+
+             
+<!--Avogadro's Law-->
+
+            <div class="headoflaw" id="avogadro"><h1>"Avogadro's Law"</h1></div><br>
+            <!--About law maker-->
+            <div class="maker">
+                <div class="portrait">
+                    <img src="imgs/Amedeo-Avogadro.jpg">
+                </div>
+                <div class="biography">
+                    <p>အမည်အရင်းမှာအာမယ်ဒီရို အဗိုဂါဒရို(Amedeo-Avogadro)ဖြစ်ပြီး၊ ၁၇၇၆ခုနှစ်တွင် ဆာဒင်းနီးယားဘုရင့်နိုင်ငံ(Kingdom of Sardinia)(ယခုအီတလီနိုင်ငံ၏အစိတ်အပိုင်း)၏မြင့်မြတ်သောမိသားစုမှ(Turin)တူရင်အရပ်တွင် မွေးဖွားခဲ့သည်။အသက်(၂၀)အရွယ်မှစတင်၍ ရူပဗေဒနှင့် သင်္ချာပညာတို့ကို လေ့လာရန်ဆုံးဖြတ်ပြီး ၁၈၀၉ခုနှစ်တွင် Vercelli(ဗာဆယ်လီ)ရှိအထက်တန်းကျောင်းတစ်ခုတွင် ပညာသင်ယူခဲ့သည်။(၁၈၁၁)ခုနှစ်တွင် အခြေခံမော်လီကျူးများ၏နှိုင်းရဒြပ်ထုအကြောင်းအရာပါစာတမ်းပြုစုခဲ့သည်။၁၈၂၀တွင် တူရင်တက္ကသိုလ်တွင် ရူပဗေဒပါမောက္ခဖြစ်လာခဲ့သည်။၁၈၂၃တွင် တော်လှန်ရေးလှုပ်ရှားမှုတွင်ပါဝင်မှုကြောင့်ရာထူးမှထုတ်ပယ်ခံရသည်။ထို့နောက်၁၈၃၃တွင် တူရင်တက္ကသိုလ်မှပြန်လည်ခေါ်ယူခြင်းခံရပြီးနှစ်ပေါင်း(၂၀)ခန့်ပညာဆက်လက်သင်ကြားပေးခဲ့သည်။ Felicita Mazz`e နှင့်လက်ထပ်၍သားသမီး(၆)ဦးထွန်းကားခဲ့သည်။အသက်(၇၉)နှစ် ၁၈၅၆ခုနှစ်၊ဇူလိုင်လ၊(၉)ရက်နေ့တွင်တူရင်အရပ်၌ပင်ကွယ်လွန်သည်။<p>
+
+                </div>
+            </div>
+
+            <!--Description About law using radio button-->
+            <div class="law">
+                <input type="checkbox" name="accordion" id="accordion4">
+                <label for="accordion4">"Avogadro's Law"</label>
+                <div class="accordion-content">
+                    "At constant temperature and pressure, the volume, V, occupied by a gas sample is directly proportional to the number of moles,n,of gas."<br>(It,s also can state as)<br>
+                    &ensp;&ensp;&ensp;"Under the same conditions of temperature and pressure,equal voumes of all gases contain the same number of molecules(or atoms if the gas is monoatomic)."
+                    <div><button onclick="showMyan4()">Myan</button>
+                    <button onclick="listen4()"><i class="fa-solid fa-volume-high"></i><audio src="audios/avogadro.mp3" id="audio4"></audio></button></div>
+                </div>
+
+                <div id="accordion-content-mya4">
+                    "ကိန်းသေအပူချိန်နှင့် ကိန်းသေဖိအားတွင် နမူနာဓာတ်ငွေ့ တစ်ခု၏ နေရာယူထားသောထုထည်သည် ဓာတ်ငွေ့၏&ensp;mole&ensp;အရေအတွက်&ensp;(n)&ensp;နှင့် တိုက်ရိုက်အချိုးကျသည်။"<br>(ဤကဲ့သို့လည်းဖော်ပြနိုင်သေးသည်)<br>
+                    "အပူချိန်နှင့် ဖိအားတူညီသော အခြေအနေတွင် ထုထည်တူသောဓာတ်ငွေ့အားလုံးသည် တူညီသော မော်လီကျူးအရေအတွက် (သို့မဟုတ်-ဓာတ်ငွေ့သည်အက်တမ်တစ်မျိုးတည်းဖြစ်လျှင် အက်တမ်အရေအတွက်)ပါဝင်သည်။"
+                </div>
+            </div>
+
+            <!--box for equation and graph-->
+            <div class="makerLaw">
+                <div class="contentbox">
+                    <p>V&ensp;&ensp;&prop;&ensp;&ensp;n&ensp;&ensp;(a given mass of gas, kept at a constant volume)</p>
+                    <p><sup style="font-size: 13px;">
+                        <button style="border: none; box-shadow: none;">
+                        <h3>
+                        <div>
+                        <div style="border-bottom: 1px solid black;">V</div>
+                        <div>n</div>
+                        </div>
+                        </h3>
+                        </button>
+                        &ensp;&ensp;=&ensp;&ensp;<span style="font-size: 16px;">constant</span></p><br>
+                    <button style="background-color: orange; color: #000;">
+                        <h3 style="display: flex;">
+                            <div>
+                                <div style="border-bottom: 1px solid black;">V<sub>1</sub></div>
+                                <div>n<sub>1</sub></div>
+                            </div>&ensp;&ensp;
+                            <div style="display: flex; align-items: center; justify-content: center;">=</div>&ensp;&ensp;
+                            <div>
+                                <div style="border-bottom: 1px solid black;">V<sub>2</sub></div>
+                                <div>n<sub>2</sub></div>
+                            </div>&ensp;&ensp;
+                            <div style="display: flex; align-items: center; justify-content: center;">(at the same temperature and pressure)</div>
+                        </h3>
+                    </button>
+                    <p>Where V<sub>1</sub>&ensp;and&ensp;n<sub>1</sub>&ensp;are for the initial conditions;</p>
+                    <p>V<sub>2</sub>&ensp;and&ensp;n<sub>2</sub>&ensp;are for the final conditions</p>
+                </div>
+                <div class="imgbox">
+                    <img src="imgs/VandAmount.webp">
+                    <p>Relationship between volume and number of moles</p>
+                </div>
+            </div><br>
+            <hr style="height:5px;" color="black"/><br>
+
+<!--Dalton's law of Partial Pressure-->
+
+            <div class="headoflaw" id="dalton"><h1>"Dalton's law"</h1></div><br>
+            <!--About law maker-->
+            <div class="maker">
+                <div class="portrait">
+                    <img src="imgs/dalton.jpg">
+                </div>
+                <div class="biography">
+                    <p>အမည်အရင်းမှာ ဂျွန်ဒေါ်လ်တန်(John-Dalton)ကို၁၇၆၆ခုနှစ်၊စက်တင်ဘာလ၊(၆)ရက်နေ့တွင်အင်္ဂလန်နိုင်ငံ ကမ်းဘာလန်း၊အီးဂဲလ်စ်ဖီးလ်ဒ်(Eaglesfield)အရပ်တွင်မွေးဖွားခဲ့သည်။မိဘများမှာ Joseph Dalton နှင့် Deborah Greenupတို့ဖြစ်သည်။မွေးချင်းနှစ်ယောက်ရှိသည်။ အင်္ဂလိပ်ဓာတုဗေဒပညာရှင်၊ ရူပဗေဒပညာရှင်၊ မိုးလေဝသပညာရှင်တစ်ဦးဖြစ်သည်။အက်တမ်သီအိုရီကို ဓာတုဗေဒပညာရပ်အတွင်းမိတ်ဆက်ခြင်း၊အရောင်ခွဲခြားမမြင်နိုင်မှုကိုသုတေသနပြုခဲ့ခြင်း(ဒေါ်လ်တန်ဝါဒ၊ပညာရပ်)တို့ကြောင့်အထူးလူသိများသည်။၁၈၄၄ခုနှစ်၊ဇူလိုင်လ၊(၂၇)ရက်၊အသက်(၇၇)နှစ်တွင်အင်္ဂလန်နိုင်ငံ မန်ချက်စတာမြို့(Manchester)၊လန်ကရှီးယားအရပ်တွင် ကွယ်လွန်ခဲ့သည်။</p>
+                </div>
+            </div>
+
+            <!--Description About law using radio button-->
+            <div class="law">
+                <input type="checkbox" name="accordion" id="accordion5">
+                <label for="accordion5">"Dalton's Law of partial pressure"</label>
+                <div class="accordion-content">
+                    "When the temperature is kept constant, the total pressure of a gas mixture is the sum of the partial pressures of different gases."<br>
+                    <div><button onclick="showMyan5()">Myan</button>
+                    <button onclick="listen5()"><i class="fa-solid fa-volume-high"></i><audio src="audios/dalton.mp3" id="audio5"></audio></button></div>
+                </div>
+
+                <div id="accordion-content-mya5">
+                    <q>အပူချိန်ကိန်းသေဖြစ်သောအခါတွင် ဓာတ်ငွေ့နှောတစ်ခု၏စုစုပေါင်းဖိအားသည် ကွဲပြားခြားနားသောဓာတ်ငွေ့များ၏တစ်ပိုင်းတစ်စဖိအားများ၏စုစုပေါင်းဖြစ်သည်။</q>
+                </div>
+            </div>
+
+            <!--box for equation and graph-->
+            <div class="makerLaw">
+                <div class="contentbox">
+                    <button style="background-color: orange; color: #000;"><h3>P<sub>total</sub>&ensp;&ensp;=&ensp;&ensp;P<sub>A</sub>&ensp;&ensp;+&ensp;&ensp;P<sub>B</sub>&ensp;&ensp;+&ensp;&ensp;P<sub>C</sub>&ensp;&ensp;+&ensp;&ensp;...(at constant temperature)</h3></button>
+                    <p>P<sub>total</sub>&ensp;&ensp;=&ensp;&ensp;total pressure of a gas mixture</p>
+                    <p>P<sub>A</sub>,&ensp;&ensp;P<sub>B</sub>,&ensp;&ensp;P<sub>C</sub>&ensp;&ensp;...=&ensp;&ensp;partial pressure of different gases</p>
+
+                </div>
+                <div class="imgbox">
+                    <img src="imgs/Dalton’s-Law.png" style="width:350px;">
+                    <p>Relationship between total pressure and partial pressure</p>
+                </div>
+            </div><br>
+            <iframe src="pdf/example/Eg(8).pdf" frameborder="0" width="100%" height="400px"></iframe>
+            <hr style="height:5px;" color="black"/><br>
+
+<!--Graham's Law-->
+
+            <div class="headoflaw" id="graham"><h1>"Graham's Law"</h1></div><br>
+            <!--About law maker-->
+            <div class="maker">
+                <div class="portrait">
+                    <img src="imgs/graham.jpg">
+                </div>
+                <div class="biography">
+                    <p>အမည်အပြည့်အစုံမှာသောမက်စ်ဂရေဟမ်(Thomas Graham)ဖြစ်သည်။အင်္ဂလိပ်ဓာတုဗေဒပညာရှင်ဖြစ်ပြီး၁၈၀၅ခုနှစ်၊ဒီဇင်ဘာလ၊(၂၁)ရက်နေ့တွင်စကော့တလန်ပြည်(Glasgow)ဂလက်စ်ဂိုမြို့တွင်မွေးဖွားသည်။ ဖခင်မှာ အောင်မြင်သောအထည်အလိပ်လုပ်ငန်းရှင်တစ်ဦးဖြစ်သည်။ ၁၈၁၉ခုနှစ်တွင် (Glasgow)ဂလက်စ်ဂိုတက္ကသိုလ်တွင် ပညာသင်ကြားခဲ့ပြီး ဓာတုဗေဒပညာရပ်အားလွန်စွာစိတ်ဝင်စားသူဖြစ်သည်။ထို့နောက်(Eldinburgh)ဧဒင်ဘာ့တက္ကသိုလ်တွင် ဆေးပညာကိုဆက်လက်လေ့လာခဲ့သည်။ အန်ဒါဆန်ဆေးပညာတက္ကသိုလ်တွင်ပထမဆုံးဓာတုဗေဒပါမောက္ခအဖြစ်ဆောင်ရွက်သည်။၁၈၆၉ခုနှစ်၊စက်တင်ဘာလ၊(၁၆)ရက်နေ့၊အသက်(၆၃)နှစ်အရွယ်တွင် အင်္ဂလန်နိုင်ငံ၊လန်ဒန်မြို့တွင်ကွယ်လွန်သည်။<p>
+
+                </div>
+            </div>
+
+            <!--Description About law using radio button-->
+            <div class="law">
+                <input type="checkbox" name="accordion" id="accordion6">
+                <label for="accordion6">"Graham's law of gaseous diffusion"</label>
+                <div class="accordion-content">
+                    "At the given temperature and pressure, the rate of diffusion of a gas is inversely proportional to the square root of its density."
+                    <div><button onclick="showMyan6()">Myan</button>
+                    <button onclick="listen6()"><i class="fa-solid fa-volume-high"></i><audio src="audios/graham.mp3" id="audio6"></audio></button></div>
+                </div>
+
+                <div id="accordion-content-mya6">
+                    "ပေးထားသော အပူချိန်နှင့်ဖိအားတွင် ဓာတ်ငွေ့၏ပျံ့နှံ့နှုန်းသည် ၎င်းဓာတ်ငွေ့ သိပ်သည်းဆ၏နှစ်ထပ်ကိန်းရင်းနှင့်ပြောင်းပြန်အချိုးကျသည်။"
+                </div>
+            </div>
+
+            <!--box for equation and graph-->
+            <div class="makerLaw">
+                <div class="contentbox">
+                    &radic;<span style="border-top: 1px solid black;">d</span>
+                    <p>r&ensp;&ensp;&prop;&ensp;&ensp;
+                        <button style="border: none; box-shadow: none;">
+                        <h3>
+                        <div>
+                        <div style="border-bottom: 1px solid black;">1</div>
+                        <div>&radic;<span style="border-top: 1px solid black;">d</span></div>
+                        </div>
+                        </h3>
+                        </button>
+                        &ensp;&ensp;(a given mass of gas, kept at a constant volume)
+                    </p>
+                    <p>
+                        r&ensp;&ensp;=&ensp;&ensp;<span style="font-size: 16px;">constant</span>&ensp;&ensp;&times;&ensp;&ensp;
+                        <button style="border: none; box-shadow: none;">
+                        <h3>
+                        <div>
+                        <div style="border-bottom: 1px solid black;">1</div>
+                        <div>&radic;<span style="border-top: 1px solid black;">d</span></div>
+                        </div>
+                        </h3>
+                        </button>
+                    </p><br>
+
+                    <p>
+                        r&radic;<span style="border-top: 1px solid black;">d</span>
+                        =&ensp;&ensp;<span style="font-size: 16px;">constant</span>
+                    </p><br>
+                    <div style="display: flex;">
+                        <button style="background-color: orange; color: #000;">
+                            <h3 style="display: flex;">
+                                <div>
+                                    r<sub>1</sub>&radic;<span style="border-top: 1px solid black;">d<sub>1</sub></span>
+                                </div>&ensp;&ensp;
+                                <div style="display: flex; align-items: center; justify-content: center;">=</div>&ensp;&ensp;
+                                <div>
+                                    r<sub>2</sub>&radic;<span style="border-top: 1px solid black;">d<sub>2</sub></span>
+                                </div>
+                            </h3>
+                        </button>
+                        <div style="display: flex; align-items: center; justify-content: center;">(or)</div>
+                        <button style="background-color: orange; color: #000;">
+                            <h3 style="display: flex;">
+                                <div>
+                                    r<sub>1</sub>&radic;<span style="border-top: 1px solid black;">M<sub>1</sub></span>
+                                </div>&ensp;&ensp;
+                                <div style="display: flex; align-items: center; justify-content: center;">=</div>&ensp;&ensp;
+                                <div>
+                                    r<sub>2</sub>&radic;<span style="border-top: 1px solid black;">M<sub>2</sub></span>
+                                </div>
+                            </h3>
+                        </button>
+                        <div style="display: flex; align-items: center; justify-content: center;">(or)</div>
+                        <button style="background-color: orange; color: #000;">
+                            <h3 style="display: flex; align-items: center; justify-content: center;">
+                            <div>
+                                <div style="border-bottom: 1px solid black;">r<sub>1</sub></div>
+                                <div>r<sub>2</sub></div>
+                            </div>&ensp;&ensp;
+                            <div style="display: flex; align-items: center; justify-content: center;">=</div>&ensp;&ensp;
+                            <div style="display: flex;">
+                                <div style="font-size: 50px;top: -8px;position: relative;">&radic;</div>
+                                <div>
+                                    <div>
+                                        <span style="border-top: 1px solid black;">M<sub>1</sub></span>
+                                    </div>
+                                    <div>
+                                        <span style="border-top: 1px solid black;">M<sub>1</sub></span>
+                                    </div>
+                                </div>
+                            </div>
+                            </h3>
+                        </button>
+                    </div>
+                    <p>Where,r&ensp;=rate of diffusion of gas,&ensp;d&ensp;=&ensp;density of gas,M&ensp;=&ensp;molar mass;</p>
+                    <p>r<sub>1</sub>,d<sub>1</sub>,M<sub>1</sub>&ensp;are for gas-1</p>
+                    <p>r<sub>2</sub>,d<sub>2</sub>,M<sub>2</sub>&ensp;are for gas-2</p>
+                </div>
+                <div class="imgbox">
+                    <img src="imgs/difussion.jpg" style="width:350px;">
+                    <p>Diffusion and Effusion of gases</p>
+                </div>
+            </div><br>
+            <iframe src="pdf/example/Eg(9).pdf" frameborder="0" width="100%" height="400px"></iframe>
+            <hr style="height:5px;" color="black"/><br>
+
+<!--Combined Gas Law-->
+
+            <div class="headoflaw" id="combined"><h1>"Combined Gas Law"</h1></div><br>
+            <!--About law maker-->
+            <div class="maker">
+                <div class="biography">
+                    <p>Boyle's Law, Charles' Law နှင့် Gay-Lussac Law တို့ကိုပေါင်းစပ်ထားသည့် &ensp;(Combined Gas Law )&ensp; ဟုခေါ်သော သီးခြားဖြစ်သော ဖော်ပြချက်တစ်ခုရှိသည်။ဓာတ်ငွေ့၏ ပမာဏသာလျှင် ကိန်းသေဖြစ်သောအခါတွင်&ensp;ဖိအား(P)၊ထုထည်(V) အပူချိန်(T)တို့ကြား ရှိဆက်သွယ်မှုကိုဖော်ပြသည်။<p>
+
+                </div>
+            </div>
+
+            <!--Description About law using radio button-->
+            
+            <!--box for equation and graph-->
+            <div class="makerLaw">
+                <div class="contentbox">
+                    <p>V&ensp;&ensp;&prop;&ensp;&ensp;
+                        <button style="border: none; box-shadow: none;">
+                        <h3>
+                        <div>
+                        <div style="border-bottom: 1px solid black;">T</div>
+                        <div>P</div>
+                        </div>
+                        </h3>
+                        </button>
+                        &ensp;&ensp;(a given mass of gas)</p>
+                    <p>V&ensp;&ensp;=&ensp;&ensp;constant&ensp;&ensp;&times;&ensp;&ensp;<button style="border: none; box-shadow: none;">
+                        <h3>
+                        <div>
+                        <div style="border-bottom: 1px solid black;">T</div>
+                        <div>P</div>
+                        </div>
+                        </h3>
+                        </button></p>
+                    <p><sup style="font-size: 13px;">
+                        <button style="border: none; box-shadow: none;">
+                        <h3>
+                        <div>
+                        <div style="border-bottom: 1px solid black;">PV</div>
+                        <div>T</div>
+                        </div>
+                        </h3>
+                        </button>
+                        &ensp;&ensp;=&ensp;&ensp;<span style="font-size: 16px;">constant</span></p><br>
+                    <button style="background-color: orange; color: #000;">
+                        <h3 style="display: flex;">
+                            <div>
+                                <div style="border-bottom: 1px solid black;">P<sub>1</sub>V<sub>1</sub></div>
+                                <div>T<sub>1</sub></div>
+                            </div>&ensp;&ensp;
+                            <div style="display: flex; align-items: center; justify-content: center;">=</div>&ensp;&ensp;
+                            <div>
+                                <div style="border-bottom: 1px solid black;">P<sub>2</sub>V<sub>2</sub></div>
+                                <div>T<sub>2</sub></div>
+                            </div>
+                        </h3>
+                    </button>
+                    <p>Where,&ensp;P<sub>1</sub>,&ensp;V<sub>1</sub>,&ensp;T<sub>1</sub>&ensp;are for the &ensp;&ensp;<em>initial conditions</em>&ensp;&ensp;and</p>
+                    <p>P<sub>2</sub>,&ensp;V<sub>2</sub>,&ensp;T<sub>2</sub>are for the &ensp;<em>final conditions.</em>final conditions.</p>
+                </div>
+                <div class="imgbox">
+                    <img src="imgs/combined.webp">
+                    <p>Relationship between volume and pressure temperature</p>
+                </div>
+            </div><br>
+            <iframe src="pdf/example/Eg(4).pdf" frameborder="0" width="100%" height="400px"></iframe>
+            <hr style="height:5px;" color="black"/><br>
+
+<!--Ideal Gas Law-->
+
+            <div class="headoflaw" id="idealgas"><h1>"Ideal Gas Law"</h1></div><br>
+            <!--About law maker-->
+            <div class="maker">
+                <div class="biography">
+                    <h2>"Ideal gas Vs Real gas"</h2>
+                    <p>Ideal gas ဆိုသည်မှာ စိတ်ကူးယဉ်ဓာတ်ငွေ့တစ်ခုဖြစ်သည်။ideal gas ၏မော်လီကျူးများသည် တစ်ခုနှင့်တစ်ခု ဆွဲခြင်း(သို့)တွန်းခြင်းမပြုပါ။ ဓာတ်ငွေ့သည် ထုထည်ကို ယူထားသော်လည်း ideal gas မော်လီကျူးများကို ၎င်းတို့အတွင်း၌ ထုထည်မရှိသော point particles အလွန်သေးငယ်သော အမှုန်များအဖြစ် အနီးစပ်ဆုံး ခန့်မှန်းထားသည်။ တစ်နည်းဆိုရသော် မော်လီကျူးများ၏ထုထည်သည် မပြောပလောက်ပါ။ သို့သော် real gas တခုအတွင်းရှိအမှုန်များသည် ထုထည်ရှိပြီး အမှုန်များကြားတွင် ဆွဲအားရှိကြသည်။ ဤဆွဲဆောင်မှုအားများကြောင့် real gasသည် ၎င်းကို ဖိသိပ်သောအခါ (သို့) အအေးခံသောအခါ ကျုံ့သွားနိုင်သည်။ <p>
+                        <p>real gas များသည် အပူချိန်နိမ့်ပြီး မြင့်မားသော ဖိအားတွင် ideal gas အပြုအမူနှင့် အများစု ကွဲပြားသော်လည်း gasesများသည် မြင့်မားသော အပူချိန်နှင့် နိမ့်သောဖိအားတွင် ideal gas ကဲ့သို့ပြုမူကြသည်။ideal gas သည် မျှတသောအပူချိန်နှင့် ဖိအားအမျိုးမျိုးတွင် ကောင်းမွန်စွာအလုပ်လုပ်သောကြောင့် ideal gas equationအား ဓာတ်ငွေ့ပြဿနာများစွာကိုဖြေရှင်းရန်အတွက် အသုံးပြုနိုင်သည်။</p>
+
+                </div>
+            </div>
+
+            <!--Description About law using radio button-->
+            
+            <!--box for equation and graph-->
+            <div class="makerLaw">
+                <div class="contentbox">
+                    <p>By summarising the gas laws,</p>
+                    <p>Boyle's Law:&ensp;V&ensp;&ensp;&prop;&ensp;&ensp;
+                        <button style="border: none; box-shadow: none;">
+                        <h3>
+                        <div>
+                        <div style="border-bottom: 1px solid black;">1</div>
+                        <div>P</div>
+                        </div>
+                        </h3>
+                        </button>
+                        &ensp;&ensp;(a given mass of gas, kept at constant temperature)</p>
+                        <p>Charles' Law:&ensp;V&ensp;&ensp;&prop;&ensp;&ensp;T
+                        &ensp;&ensp;(a given mass of gas, kept at constant pressure)</p>
+                        <p>Avogadro's Law:&ensp;V&ensp;&ensp;&prop;&ensp;&ensp;n
+                        &ensp;&ensp;(temperature and pressure are kept constant)</p>
+                       <p style="display:flex; align-items: center;">V&ensp;&ensp;&prop;&ensp;&ensp;
+                        <button style="border: none; box-shadow: none;">
+                            <h3>
+                            <div>
+                            <div style="border-bottom: 1px solid black;">nT</div>
+                            <div>P</div>
+                            </div>
+                            </h3>
+                            </button>
+                        </p>
+                        <p style="display:flex; align-items: center;">V&ensp;&ensp;&prop;&ensp;&ensp;R
+                            <button style="border: none; box-shadow: none;">
+                                <h3>
+                                <div>
+                                <div style="border-bottom: 1px solid black;">nT</div>
+                                <div>P</div>
+                                </div>
+                                </h3>
+                                </button>
+                            </p>
+                    <button style="background-color: orange; color: #000;">
+                        <h3 style="display: flex;">
+                            PV&ensp;=&ensp;nRT
+                        </h3>
+                    </button>
+                    <p>Where,&ensp;P&ensp;=Pressure,&ensp;&ensp;V&ensp;=Volume&ensp;&ensp;</p><p>n&ensp;=number of mole,&ensp;R&ensp;=&ensp;Gas constant&ensp;T&ensp;=&ensp;temperature</p>
+                </div>
+                <div class="imgbox">
+                    <img src="imgs/ideal.webp" style="width:350px;">
+                    <p>Ideal gases</p>
+                </div>
+            </div><br>
+            <iframe src="pdf/example/Eg(6).pdf" frameborder="0" width="100%" height="400px"></iframe>
+            <hr style="height:5px;" color="black"/><br>
+    </div>
+    <script src="law.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background:rgb(160, 158, 158);
+  display: flex;
+  font-weight: bold;
+}
+.sidebar{
+  position:sticky;
+  width: 60px;
+  overflow: hidden;
+  transition: 0.5s;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background:linear-gradient(180deg, #5CB5EE 0%, #E36AF6 50%,#80EB0F 100%);
+}
+.sidebar:hover{
+  width: 38%;
+}
+.sidebar ul{
+  position: relative;
+  height: 100vh;
+}
+.sidebar ul{
+  list-style: none;
+}
+.sidebar ul li:hover{
+  background:#f3f3f3;
+}
+.sidebar ul li a{
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+}
+.sidebar ul li a .icon{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  font-size: 1.5em;
+  color: #333;
+}
+.sidebar ul li a .text{
+  position: relative;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.sidebar ul li .logo{
+  margin-bottom: 50px;
+}
+.sidebar ul li .logo:hover{
+  background: #fff;
+}
+.sidebar ul li .logo .icon{
+  font-size: 2em;
+}
+.sidebar ul li .logo .text{
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+/*apo*/
+
+.bottom{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/*apo*/
+.content{
+  position: relative;
+  background: red;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.sidebar ul li a .icon{
+  color: #fff;
+}
+.sidebar:hover ul li a .icon{
+  color: #000;
+}
+
+.tooltip{
+  color: white;
+  background:black;
+  padding: 3px;
+  border-radius: 5px;
+  visibility: hidden;
+  position: fixed;
+  z-index: 0;
+  text-align:center;
+  width: auto;
+  left: 10%;
+}
+
+.container{
+  width:100%;
+  height: auto;
+  text-align: justify;
+  flex-grow: 1;
+  padding:10px;
+  line-height: 2em;
+  
+}
+
+@media screen and (max-width:750px){
+  body,.obj,.box{
+    font-size: 12px;
+  }
+  .sidebar:hover{
+    width:60px;
+  }
+  .icon:hover> .tooltip{
+    visibility: visible;
+  }
+  
+}
+/*Accordion*/
+
+.home{
+  margin: 15px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+}
+input[type="radio"]{
+  display: none;
+}
+.home{
+  border: 1px solid black;
+  border-radius: 5px;
+}
+label{
+  display: block;
+  padding: 10px;
+  border-bottom:1px solid black;
+  color: white;
+  background:rgba(36, 36, 75, 0.87);
+  z-index: 2;
+}
+
+.accordion-content{
+  border-bottom: 1px solid black;
+  padding: 0;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  z-index: -1;
+  transition: 0.3s linear;
+  text-indent: 20px;
+}
+/*myanmar Text*/
+#accordion-content-mya,#accordion-content-mya1,#accordion-content-mya2,#accordion-content-mya3,#accordion-content-mya4,#accordion-content-mya5,#accordion-content-mya6,#accordion-content-mya7,#accordion-content-mya8{
+  display: none;
+  text-indent: 20px;
+  padding: 10px;
+  opacity: 0;
+}
+
+button{
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  border:none;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
+  margin: 5px;
+}
+
+
+input:checked ~ .accordion-content{
+  padding: 15px;
+  opacity: 1;
+  max-height: 500px;
+  z-index:1;
+}
+
+
+
+

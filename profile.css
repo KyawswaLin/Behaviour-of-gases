@@ -1,0 +1,98 @@
+body{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background:linear-gradient(90deg,black,rgb(167, 162, 162),black);
+}
+.profile-card{
+  background: rgb(24, 23, 23);
+  border: 3px solid #f8f4f4;
+  width: auto;
+  height: 100%;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0px 0px 25px rgba(15, 12, 12, 0.7);
+
+}
+.profile-pic img{
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.contact a i{
+  margin: 20px;
+}
+
+.content .content-box{
+  color: #fff;
+  display: grid;
+  grid-template-columns: 5% 95%;
+  place-items: center;
+  border-bottom: 2px solid whitesmoke;
+  box-shadow:0px 2px 3px rgba(255,255,255,0.3);
+  padding: 10px;
+  height: 60px;
+  text-align: center;
+}
+
+
+/*aboutme*/
+
+.aboutme{
+  background-color: rgb(27, 24, 24);
+  border-radius: 20px;
+  border: 3px solid #f3f0f0;
+  width: 800px;
+  height: 100%;
+  color: #fff;
+  box-shadow: 0px 0px 25px rgba(224, 13, 13, 0.7);
+}
+.profo-text{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border: 2px solid #fff;
+  text-align: center;
+  border-radius: 20px;
+}
+.aboutme .head{
+  position:relative;
+  text-align: center;
+}
+.aboutme .head::after{
+  position: absolute;
+  content: "";
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 150px;
+  background:linear-gradient(45deg,#f64c57,#e21b5a);
+  height: 5px;
+}
+.profo-text p{
+  text-indent: 30px;
+  text-align: justify;
+}
+.profo-text h2{
+  position: relative;
+}
+.profo-text h2::after{
+  position: absolute;
+  content: "";
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 150px;
+  background:linear-gradient(45deg,#70cc70,#b94010);
+  height: 5px;
+}
