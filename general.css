@@ -337,25 +337,19 @@ footer{
   color: #fff;
   text-align: center;
 }
-
-@media screen and (max-width:450px){
+@media screen and (max-width:750px){
   body,.obj,.box{
     font-size: 12px;
   }
   .sidebar:hover{
     width:60px;
   }
-  .imgbox .imgs{
-    width: 300px;
-    height: auto;
-  }
-  footer{
-    font-size: 13px;
-  }
   .icon:hover> .tooltip{
     visibility: visible;
   }
+  
 }
+
 
 
 
