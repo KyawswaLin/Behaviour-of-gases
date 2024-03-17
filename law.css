@@ -209,6 +209,7 @@ input:checked ~ .accordion-content{
   text-align: center;
   background:navy;
   color: #fff;
+  width:100%;
 }
 .makerLaw{
   display: flex;
