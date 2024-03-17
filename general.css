@@ -338,7 +338,7 @@ footer{
   text-align: center;
 }
 
-@media screen and (max-width:750px){
+@media screen and (max-width:450px){
   body,.obj,.box{
     font-size: 12px;
   }
